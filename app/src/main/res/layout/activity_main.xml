@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/blue"
+
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="620dp"
+            android:background="@drawable/bio"
+            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+            android:focusable="auto"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:hint="My Bio"
+            android:padding="20dp"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/backgroud"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/edit"
+            app:layout_constraintStart_toStartOf="@+id/edit"
+            app:layout_constraintTop_toBottomOf="@+id/edit"
+            tools:ignore="ExtraText">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView"
+                android:layout_width="120dp"
+
+                android:layout_height="120dp"
+                android:padding="5dp"
+                android:src="@drawable/page"
+
+                app:shapeAppearanceOverlay="@style/circular"
+
+                app:strokeColor="@color/design_default_color_primary_dark"
+                app:strokeWidth="2dp"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Salah mustafa yaaqba"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="141dp" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/dd"
+                android:drawableLeft="@drawable/baseline_text_snippet_24"
+                android:ems="10"
+                android:hint="Write your Hobbies"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:selectAllOnFocus="false"
+                android:textAlignment="center"
+                android:textColorLink="#3F51B5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/hover"
+                android:text="Add"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hobbies"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/akaya_telivigala"
+                android:textAlignment="center"
+                android:textColor="#673AB7"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <EditText
+                android:editable="false"
+                android:focusable="false"
+                android:text="@string/MultiLine2"
+                android:fontFamily="@font/akaya_telivigala"
+
+                android:id="@+id/MultiLine2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sssss"
+                android:ems="10"
+                android:fadeScrollbars="true"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:nestedScrollingEnabled="true"
+                android:overScrollMode="always"
+                android:padding="10dp"
+
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="horizontal|vertical"
+                android:scrollHorizontally="true"
+                android:verticalScrollbarPosition="right" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
