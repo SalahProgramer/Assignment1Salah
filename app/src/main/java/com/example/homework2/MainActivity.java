@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 Button btn;
-    EditText edit;
 EditText editText;
 TextView hobbies;
     EditText areatext;
@@ -35,17 +34,11 @@ areatext.append("\n");
 
 
 }
-        edit=findViewById(R.id.edit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(edit.getText().toString().equals("")){
-                    hobbies.setVisibility(View.GONE);
-                    Toast.makeText(MainActivity.this,"Error the My bio is empty",Toast.LENGTH_SHORT).show();
 
-
-                }
-               else if(editText.getText().toString().equals("")){
+                if(editText.getText().toString().equals("")){
 
                     hobbies.setVisibility(View.GONE);
                     Toast.makeText(MainActivity.this,"Error the Hobbies Are empty",Toast.LENGTH_SHORT).show();
@@ -53,13 +46,6 @@ areatext.append("\n");
 
                 }
 
-                else if(editText.getText().toString().equals("") && edit.getText().toString().equals("")){
-
-                    hobbies.setVisibility(View.GONE);
-                    Toast.makeText(MainActivity.this,"Error the my bio and Hobbies Are empty",Toast.LENGTH_SHORT).show();
-
-
-                }
                 else {
 
                     hobbies.setEnabled(true);
